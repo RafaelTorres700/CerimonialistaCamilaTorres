@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Camila Torres - Assessoria em Eventos | Transformando Sonhos em Realidade
+    </title>
+    <meta
+      name="description"
+      content="Assessoria especializada em eventos personalizados desde 2018. Camila Torres transforma seus sonhos em realidade com carinho e atenção aos detalhes."
+    />
+    <link rel="stylesheet" href="style.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+<script>
+  document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const nome = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const mensagem = document.getElementById('message').value;
+
+    const texto = `Olá, meu nome é ${nome}.\nMeu email: ${email}\nMensagem: ${mensagem}`;
+    // Troque para seu número já com DDI, DDD e sem nenhum caractere especial!
+    const numeroWhatsApp = '5521981390106';
+
+    const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(texto)}`;
+
+    window.open(url, '_blank');
+  });
+</script>
+
+
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="navbar">
+        <div class="container">
+          <div class="nav-brand">
+            <h2>Camila Torres</h2>
+            <span>Assessoria em Eventos</span>
+          </div>
+          <div class="nav-links">
+            <a href="#sobre">Sobre</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#diferenciais">Diferenciais</a>
+            <a href="#depoimentos">Depoimentos</a>
+            <a href="#contato">Contato</a>
+          </div>
+          <div class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-background">
+        <img
+          src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+          alt="Casamento elegante"
+          class="hero-image"
+        />
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            Transformando Sonhos em
+            <span class="highlight">Realidade</span>
+          </h1>
+          <p class="hero-subtitle">
+            Assessoria especializada em eventos personalizados desde 2018.<br />
+            Cada detalhe pensado com carinho para tornar seu dia único e
+            inesquecível.
+          </p>
+          <div class="hero-buttons">
+            <a
+              href="https://wa.me/5521988164687"
+              class="btn btn-primary"
+              target="_blank"
+            >
+              <i class="fab fa-whatsapp"></i>
+              Agendar Reunião
+            </a>
+            <a href="#sobre" class="btn btn-secondary"> Conhecer Mais </a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll">
+        <i class="fas fa-chevron-down"></i>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre" class="about">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text">
+            <h2 class="section-title">Sobre Camila Torres</h2>
+            <p class="about-description">
+              Há mais de 6 anos, dedico-me a transformar sonhos em realidade
+              através da assessoria personalizada em eventos. Minha paixão por
+              criar momentos únicos e inesquecíveis nasceu da crença de que cada
+              celebração merece ser especial.
+            </p>
+            <p class="about-description">
+              Com experiência consolidada e uma equipe dedicada, acompanho cada
+              cliente desde o primeiro café até o pós-evento, garantindo que
+              cada detalhe seja cuidadosamente planejado e executado com
+              excelência.
+            </p>
+            <div class="about-stats">
+              <div class="stat">
+                <span class="stat-number">200+</span>
+                <span class="stat-label">Eventos Realizados</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">6+</span>
+                <span class="stat-label">Anos de Experiência</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Satisfação dos Clientes</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-image">
+            <img
+              src="/img/camila.jpg"
+              alt="Camila Torres - Assessora de Eventos"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicos" class="services">
+      <div class="container">
+        <h2 class="section-title">Nossos Serviços</h2>
+        <p class="section-subtitle">
+          Assessoria completa e humanizada para tornar seu evento perfeito
+        </p>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-heart"></i>
+            </div>
+            <h3>Assessoria Completa</h3>
+            <p>
+              Acompanhamento integral desde o planejamento até a execução,
+              cuidando de cada detalhe para que você viva seu momento especial
+              sem preocupações.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-calendar-check"></i>
+            </div>
+            <h3>Assessoria Parcial</h3>
+            <p>
+              Suporte específico nas etapas que você mais precisa, oferecendo
+              flexibilidade para adequar nossos serviços ao seu orçamento e
+              necessidades.
+            </p>
+          </div>
+        </div>
+
+        <div class="process">
+          <h3 class="process-title">Nossa Metodologia</h3>
+          <div class="process-steps">
+            <div class="step">
+              <div class="step-icon">
+                <i class="fas fa-coffee"></i>
+              </div>
+              <h4>Primeira Reunião</h4>
+              <p>Conhecemos seus sonhos e expectativas em um café acolhedor</p>
+            </div>
+
+            <div class="step">
+              <div class="step-icon">
+                <i class="fas fa-lightbulb"></i>
+              </div>
+              <h4>Planejamento</h4>
+              <p>Desenvolvemos um projeto único e personalizado para você</p>
+            </div>
+
+            <div class="step">
+              <div class="step-icon">
+                <i class="fas fa-tasks"></i>
+              </div>
+              <h4>Alinhamentos</h4>
+              <p>
+                Reuniões regulares para ajustar detalhes e garantir perfeição
+              </p>
+            </div>
+
+            <div class="step">
+              <div class="step-icon">
+                <i class="fas fa-clipboard-list"></i>
+              </div>
+              <h4>Roteiro Detalhado</h4>
+              <p>Cronograma completo com todos os fornecedores e horários</p>
+            </div>
+
+            <div class="step">
+              <div class="step-icon">
+                <i class="fas fa-star"></i>
+              </div>
+              <h4>Execução</h4>
+              <p>
+                Coordenação completa no dia do evento para tudo sair perfeito
+              </p>
+            </div>
+
+            <div class="step">
+              <div class="step-icon">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <h4>Pós-Evento</h4>
+              <p>Relatório completo e suporte para finalizar pendências</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Differentials Section -->
+    <section id="diferenciais" class="differentials">
+      <div class="container">
+        <h2 class="section-title">Nossos Diferenciais</h2>
+        <div class="differentials-grid">
+          <div class="differential-card">
+            <div class="differential-icon">
+              <i class="fas fa-gift"></i>
+            </div>
+            <h3>Kit Cerimonial</h3>
+            <p>
+              Kit completo com tudo que você precisa para o cerimonial:
+              alianças, taças, almofadas e muito mais.
+            </p>
+          </div>
+
+          <div class="differential-card">
+            <div class="differential-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3>Equipe Qualificada</h3>
+            <p>
+              Profissionais experientes e dedicados, treinados para oferecer o
+              melhor atendimento em cada evento.
+            </p>
+          </div>
+
+          <div class="differential-card">
+            <div class="differential-icon">
+              <i class="fas fa-handshake"></i>
+            </div>
+            <h3>Acompanhamento Total</h3>
+            <p>
+              Suporte integral desde o primeiro contato até após o evento,
+              garantindo tranquilidade em todos os momentos.
+            </p>
+          </div>
+
+          <div class="differential-card">
+            <div class="differential-icon">
+              <i class="fas fa-sync-alt"></i>
+            </div>
+            <h3>Flexibilidade</h3>
+            <p>
+              Adaptamos nossos serviços às suas necessidades específicas e
+              orçamento, sempre com qualidade.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="depoimentos" class="testimonials">
+      <div class="container">
+        <h2 class="section-title">O que nossos clientes dizem</h2>
+        <div class="testimonials-carousel">
+          <div class="testimonial active">
+            <div class="testimonial-content">
+              <i class="fas fa-quote-left"></i>
+              <p>
+                "Camila transformou nosso casamento em um sonho realizado. Cada
+                detalhe foi pensado com carinho e a execução foi perfeita. Não
+                tivemos que nos preocupar com nada!"
+              </p>
+              <div class="testimonial-author">
+                <strong>Ana & Pedro</strong>
+                <span>Casamento - Dezembro 2023</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial">
+            <div class="testimonial-content">
+              <i class="fas fa-quote-left"></i>
+              <p>
+                "Profissionalismo e dedicação incomparáveis. A assessoria da
+                Camila fez toda a diferença no nosso evento. Recomendo de olhos
+                fechados!"
+              </p>
+              <div class="testimonial-author">
+                <strong>Mariana & João</strong>
+                <span>Casamento - Setembro 2023</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial">
+            <div class="testimonial-content">
+              <i class="fas fa-quote-left"></i>
+              <p>
+                "Desde o primeiro café já sentimos a diferença. Camila entendeu
+                exatamente o que queríamos e superou todas as nossas
+                expectativas. Gratidão eterna!"
+              </p>
+              <div class="testimonial-author">
+                <strong>Carolina & Miguel</strong>
+                <span>Casamento - Junho 2023</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonials-nav">
+          <button class="nav-btn active" onclick="showTestimonial(0)"></button>
+          <button class="nav-btn" onclick="showTestimonial(1)"></button>
+          <button class="nav-btn" onclick="showTestimonial(2)"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="contact">
+      <div class="container">
+        <h2 class="section-title">Vamos Conversar?</h2>
+        <p class="section-subtitle">
+          Cada sonho é único, e sua proposta também será!
+        </p>
+
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Entre em Contato</h3>
+            <div class="contact-item">
+              <i class="fab fa-whatsapp"></i>
+              <span>(21) 98816-4687</span>
+            </div>
+            <div class="contact-item">
+              <i class="fab fa-instagram"></i>
+              <span>@camilatorresassessoria</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <span>contato@camilatorresassessoria.com</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Rio de Janeiro - RJ</span>
+            </div>
+
+            <div class="price-info">
+              <h4>Orçamento Personalizado</h4>
+              <p>
+                Solicite um orçamento personalizado pelo WhatsApp. Cada evento é
+                único e merece uma proposta especial!
+              </p>
+            </div>
+          </div>
+
+         <div class="contact-form">
+  <h3>Envie sua Mensagem</h3>
+  <form id="contactForm">
+    <div class="form-group">
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Seu nome"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Seu email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <textarea
+        id="message"
+        name="message"
+        placeholder="Conte-nos sobre seu evento dos sonhos..."
+        required
+      ></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">
+      <i class="fab fa-whatsapp"></i>
+      Enviar pelo WhatsApp
+    </button>
+  </form>
+</div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <h3>Camila Torres</h3>
+            <p>Assessoria em Eventos</p>
+          </div>
+          <div class="footer-links">
+            <a href="#sobre">Sobre</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#diferenciais">Diferenciais</a>
+            <a href="#contato">Contato</a>
+          </div>
+          <div class="footer-social">
+            <a href="https://wa.me/5521988164687" target="_blank">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a
+              href="https://instagram.com/camilatorresassessoria"
+              target="_blank"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2024 Camila Torres Assessoria em Eventos. Todos os direitos
+            reservados.
+          </p>
+          <p>contato@camilatorresassessoria.com | Rio de Janeiro - RJ</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <div class="whatsapp-float">
+      <a href="https://wa.me/5521988164687" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
+
+  
+  </body>
+</html>
